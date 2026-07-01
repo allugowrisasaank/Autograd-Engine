@@ -72,4 +72,4 @@ Even on this extremely tiny 337-parameter model running on a single thread:
 * **Arena Allocator Engine:** `~2.18 ms`
 * **Naive Object-Oriented Engine:** `~3.26 ms`
 
-The Arena Allocator engine is nearly **50% faster** than the naive implementation strictly by eliminating the 11,000+ dynamic heap allocations, pointer chasing, and L1 cache misses that occur when building and tearing down the graph recursively on the heap.
+The Arena Allocator engine is nearly **33% faster** than the naive implementation strictly by eliminating the 11,000+ dynamic heap allocations, pointer chasing, and L1 cache misses that occur when building and tearing down the graph recursively on the heap.
